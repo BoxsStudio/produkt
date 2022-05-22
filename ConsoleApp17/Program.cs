@@ -9,18 +9,28 @@ namespace ConsoleApp17
 {
     internal class Program
     {
+        
 
         static void Main(string[] args)
         {
-            for (int i = 1; i < 11; i++)
+            
+            
+           StreamReader df = new StreamReader("LOG.txt");
+            int dwe = Convert.ToInt32(df.ReadLine());
+            df.Close();
+            if (dwe == 1)
             {
-                string d1 = i + ".txt";
-                StreamWriter sw = new StreamWriter(d1);
-
-
+                StreamWriter sw = new StreamWriter("1.txt");
+                sw.Close();
 
             }
-            Console.WriteLine("посмотреть товары 1");
+            
+            
+                
+
+
+            
+            Console.WriteLine("1 посмотреть товары  2 добавить товар 3 редачить товар 4 закончить");
             int read = Convert.ToInt32(Console.ReadLine());
             
 
@@ -28,7 +38,7 @@ namespace ConsoleApp17
             {
                 
 
-                for (int i = 1; i < 11; i++)
+                for (int i = 1; i < 1001; i++)
                 {
                     string dd = i + ".txt";
                     StreamReader sr = new StreamReader(dd);
@@ -39,7 +49,30 @@ namespace ConsoleApp17
                 }
                 
             }
-            
+            if (read == 2)
+            {
+                if (dwe > 1)
+                {
+                    StreamWriter fails2 = new StreamWriter(dwe +".txt");
+                    fails2.Close();
+                }
+                Console.WriteLine("namber fails " + dwe);
+                Console.WriteLine("name");
+                string read1 = Console.ReadLine();
+                if (dwe > 1)
+                {
+                    
+                }
+                dwe++;
+                
+                
+                
+                df.Close();
+
+               
+
+            }
+
         }
     }
 }
