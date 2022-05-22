@@ -6,3 +6,11 @@ I:\visualStudia\ConsoleApp17\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.Suggeste
 I:\visualStudia\ConsoleApp17\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.CoreCompileInputs.cache
 I:\visualStudia\ConsoleApp17\ConsoleApp17\obj\Debug\ConsoleApp17.exe
 I:\visualStudia\ConsoleApp17\ConsoleApp17\obj\Debug\ConsoleApp17.pdb
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\bin\Debug\ConsoleApp17.exe.config
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\bin\Debug\ConsoleApp17.exe
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\bin\Debug\ConsoleApp17.pdb
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.AssemblyReference.cache
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.SuggestedBindingRedirects.cache
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\obj\Debug\ConsoleApp17.csproj.CoreCompileInputs.cache
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\obj\Debug\ConsoleApp17.exe
+C:\Users\smyslov\Source\Repos\produkt\ConsoleApp17\obj\Debug\ConsoleApp17.pdb

@@ -9,12 +9,9 @@ namespace ConsoleApp17
 {
     internal class Program
     {
-        
-
+       
         static void Main(string[] args)
         {
-            
-            
            StreamReader df = new StreamReader("LOG.txt");
             int dwe = Convert.ToInt32(df.ReadLine());
             df.Close();
@@ -22,7 +19,6 @@ namespace ConsoleApp17
             {
                 StreamWriter sw = new StreamWriter("1.txt");
                 sw.Close();
-
             }
             
             
