@@ -21,7 +21,7 @@ namespace ConsoleApp17
 
             if (choose == 1)
             {
-                for (int i = 1; i < countFiles; i++)
+                for (int i = 1; i <= countFiles; i++)
                 {
                     string productFileName = i + ".txt";
                     
@@ -32,24 +32,26 @@ namespace ConsoleApp17
                     streamReaderProduct.Close();
                 }
             }
-            //if (choose == 2)
-            //{ 
-            //    StreamWriter fails2 = new StreamWriter(countFiles + ".txt");
-            //    fails2.Close();
-                
-            //    Console.WriteLine("namber fails " + countFiles);
-            //    Console.WriteLine("name");
-            //    string read1 = Console.ReadLine();
+            else if (choose == 2)
+            {
+                Console.Write("введите имя продукта: ");
+                string productName = Console.ReadLine();
 
-            //    countFiles++;
+                countFiles++;
+                string productFileName = countFiles + ".txt";
 
+                StreamWriter streamWriterProduct = new StreamWriter(productFileName);
+                streamWriterProduct.Write(productName);
+                streamWriterProduct.Close();
 
+                StreamWriter streamWriterLog = new StreamWriter("LOG.txt");
+                streamWriterLog.Write(countFiles);
+                streamWriterLog.Close();
 
-            //    streamReaderLog.Close();
-
-
-
-            //}
+                Console.WriteLine("Файл успешно сохранён");
+            }
+            
+            Console.ReadKey();
 
         }
     }
