@@ -9,65 +9,47 @@ namespace ConsoleApp17
 {
     internal class Program
     {
-       
         static void Main(string[] args)
         {
-           StreamReader df = new StreamReader("LOG.txt");
-            int dwe = Convert.ToInt32(df.ReadLine());
-            df.Close();
-            if (dwe == 1)
-            {
-                StreamWriter sw = new StreamWriter("1.txt");
-                sw.Close();
-            }
-            
-            
-                
+            StreamReader streamReaderLog = new StreamReader("LOG.txt");
+            int countFiles = Convert.ToInt32(streamReaderLog.ReadLine());
+            streamReaderLog.Close();
 
-
-            
             Console.WriteLine("1 посмотреть товары  2 добавить товар 3 редачить товар 4 закончить");
-            int read = Convert.ToInt32(Console.ReadLine());
-            
+            int choose = Convert.ToInt32(Console.ReadLine());
 
-            if(read == 1)
+
+            if (choose == 1)
             {
-                
-
-                for (int i = 1; i < 1001; i++)
+                for (int i = 1; i < countFiles; i++)
                 {
-                    string dd = i + ".txt";
-                    StreamReader sr = new StreamReader(dd);
-                    Console.WriteLine(sr.ReadToEnd());
+                    string productFileName = i + ".txt";
+                    
+                    StreamReader streamReaderProduct = new StreamReader(productFileName);
+                    
+                    Console.WriteLine(streamReaderProduct.ReadToEnd());
 
-                    
-                    
+                    streamReaderProduct.Close();
                 }
-                
             }
-            if (read == 2)
-            {
-                if (dwe > 1)
-                {
-                    StreamWriter fails2 = new StreamWriter(dwe +".txt");
-                    fails2.Close();
-                }
-                Console.WriteLine("namber fails " + dwe);
-                Console.WriteLine("name");
-                string read1 = Console.ReadLine();
-                if (dwe > 1)
-                {
-                    
-                }
-                dwe++;
+            //if (choose == 2)
+            //{ 
+            //    StreamWriter fails2 = new StreamWriter(countFiles + ".txt");
+            //    fails2.Close();
                 
-                
-                
-                df.Close();
+            //    Console.WriteLine("namber fails " + countFiles);
+            //    Console.WriteLine("name");
+            //    string read1 = Console.ReadLine();
 
-               
+            //    countFiles++;
 
-            }
+
+
+            //    streamReaderLog.Close();
+
+
+
+            //}
 
         }
     }
